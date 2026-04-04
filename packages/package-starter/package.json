@@ -19,6 +19,9 @@
   "keywords": [],
   "license": "MIT",
   "name": "@changeset-sandbox/package1",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch"
