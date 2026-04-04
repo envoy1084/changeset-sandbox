@@ -12,9 +12,12 @@
       "types": "./dist/index.d.mts"
     }
   },
-  "homepage": "https://github.com/thenamespace/namera#readme",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/envoy1084/changeset-sandbox#readme",
   "keywords": [],
-  "license": "Apache-2.0",
+  "license": "MIT",
   "name": "@changeset-sandbox/package1",
   "scripts": {
     "build": "tsdown",
