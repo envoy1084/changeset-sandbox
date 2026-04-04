@@ -22,6 +22,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/envoy1084/changeset-sandbox.git"
+  },
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch"
