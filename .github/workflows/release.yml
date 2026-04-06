@@ -26,8 +26,8 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          version: pnpm run version
-          publish: pnpm run release
+          version: pnpm run ci:version
+          publish: pnpm run ci:publish
           commit: "chore: release"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

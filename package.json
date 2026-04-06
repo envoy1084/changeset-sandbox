@@ -19,16 +19,15 @@
   "scripts": {
     "build": "turbo build",
     "changeset": "changeset",
-    "ci:publish": "for dir in packages/*; do (cd \"$dir\" && bun publish || true); done && changeset tag",
-    "ci:version": "changeset version && bun update",
+    "ci:publish": "turbo run build && changeset publish",
+    "ci:version": "changeset version ",
     "commitlint": "commitlint --edit",
     "dev": "turbo dev",
     "format": "biome format --write",
     "format:check": "biome format",
     "lint": "biome check --write",
     "lint:check": "biome check",
-    "prepare": "lefthook install",
-    "release": "turbo run build && changeset publish"
+    "prepare": "lefthook install"
   },
   "version": "1.0.0",
   "workspaces": [
