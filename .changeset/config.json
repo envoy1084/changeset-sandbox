@@ -8,7 +8,7 @@
   ],
   "commit": false,
   "fixed": [],
-  "ignore": [],
+  "ignore": ["@changeset-sandbox/config"],
   "linked": [],
   "updateInternalDependencies": "patch"
 }
