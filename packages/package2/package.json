@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "@changeset-sandbox/package1": "workspace:*"
+  },
+  "description": "",
+  "devDependencies": {
+    "@changeset-sandbox/config": "workspace:*",
+    "@types/bun": "^1.3.11",
+    "tsdown": "^0.21.4",
+    "typescript": "^5.9.3"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.mts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/envoy1084/changeset-sandbox#readme",
+  "keywords": [],
+  "license": "MIT",
+  "name": "@changeset-sandbox/package2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/envoy1084/changeset-sandbox.git"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "version": "0.0.0"
+}

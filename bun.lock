@@ -26,9 +26,22 @@
         "vitest": "^4.1.0",
       },
     },
-    "packages/package-starter": {
+    "packages/package1": {
       "name": "@changeset-sandbox/package1",
-      "version": "0.0.0",
+      "version": "0.0.1",
+      "devDependencies": {
+        "@changeset-sandbox/config": "workspace:*",
+        "@types/bun": "^1.3.11",
+        "tsdown": "^0.21.4",
+        "typescript": "^5.9.3",
+      },
+    },
+    "packages/package2": {
+      "name": "@changeset-sandbox/package2",
+      "version": "0.0.1",
+      "dependencies": {
+        "@changeset-sandbox/package1": "workspace:*",
+      },
       "devDependencies": {
         "@changeset-sandbox/config": "workspace:*",
         "@types/bun": "^1.3.11",
@@ -72,7 +85,9 @@
 
     "@changeset-sandbox/config": ["@changeset-sandbox/config@workspace:packages/config"],
 
-    "@changeset-sandbox/package1": ["@changeset-sandbox/package1@workspace:packages/package-starter"],
+    "@changeset-sandbox/package1": ["@changeset-sandbox/package1@workspace:packages/package1"],
+
+    "@changeset-sandbox/package2": ["@changeset-sandbox/package2@workspace:packages/package2"],
 
     "@changesets/apply-release-plan": ["@changesets/apply-release-plan@7.1.0", "", { "dependencies": { "@changesets/config": "^3.1.3", "@changesets/get-version-range-type": "^0.4.0", "@changesets/git": "^3.0.4", "@changesets/should-skip-package": "^0.1.2", "@changesets/types": "^6.1.0", "@manypkg/get-packages": "^1.1.3", "detect-indent": "^6.0.0", "fs-extra": "^7.0.1", "lodash.startcase": "^4.4.0", "outdent": "^0.5.0", "prettier": "^2.7.1", "resolve-from": "^5.0.0", "semver": "^7.5.3" } }, "sha512-yq8ML3YS7koKQ/9bk1PqO0HMzApIFNwjlwCnwFEXMzNe8NpzeeYYKCmnhWJGkN8g7E51MnWaSbqRcTcdIxUgnQ=="],
 
