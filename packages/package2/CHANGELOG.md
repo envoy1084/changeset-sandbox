@@ -1,5 +1,11 @@
 # @changeset-sandbox/package2
 
+## 0.0.2
+
+### Patch Changes
+
+- [`236916c`](https://github.com/envoy1084/changeset-sandbox/commit/236916ca6d52d13b5a332c5a8ec0ef17c85ce07e) Thanks [@envoy1084](https://github.com/envoy1084)! - fix builds
+
 ## 0.0.1
 
 ### Patch Changes
